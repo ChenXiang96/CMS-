@@ -1,0 +1,69 @@
+
+1.个人主页上的“+”下拉菜单可创建的四种类别分别有？分别的意思？
+    New repository:
+    创建新仓库
+    Import repository：
+    导入库
+    New gist：
+    Gist是一款简单的Web应用程序，常被开发者们用来共享示例代码和错误信息。 
+    Gist最大的特点是可以与其他人轻松分享示例代码
+    New organization：
+      创建新组织。组织是一种新的账号管理模式，满足大型开发团队的需要。
+      可以创建任意多的团队（Team）即角色，对属于组织的用户进行管理。
+      组织和用户一样可以创建项目，但是组织没有SSH公钥配置，也不能以组织的身份操作版本库。
+2.如何能将仓库中的html文件直接解析成页面？
+打开settings，有一个Github Pages 的设置，点击 source 中的本来的 None ，
+使其变成 master 分支，也就是作为部署github pages 的分支，然后点击 save。
+页面刷新之后，再看 github pages 设置框处，多了一行网址，就是你的 github pages 的网址了。
+3.如何删除仓库
+首先点击进入你要删除的repository，如下图，点击setting
+将网页拉到下方，找到Delete this repository 按钮，点击。
+在弹出的对话框中输入你的repository的名字
+然后点击下方的按钮完成删除。
+4.Bash是什么操作系统的命令
+   Bash是linux操作系统的命令
+5.Pwd是什么命令
+    pwd命令用于显示当前工作目录，用pwd来判定当前目录在文件系统内的确切位置。
+6.Cd是什么命令
+    用于改变你当前所在的目录
+7.Echo是什么命令
+    是Shell的一个内部指令,用于在屏幕上打印出指定的字符串。
+8.配置git用户名的命令
+    $ git config --global user.name "用户名"
+9.配置邮箱的命令
+    $ git config --global user.email "电子邮箱"
+10.命令行换行方式
+    使用echo -e可以对输出内容进行换行输出
+11.命令行终结方式
+ ctrl+c或ctrl+z
+12.使用命令行比GUI方式有何优势
+    速度快，效率高
+13.提交到本地仓库时为什么有暂存区
+  暂存区是一个介于工作区和版本库的中间状态.当执行提交的时候,实际上是将暂存区的内容提交到版本库中.
+  而且Git的很多命令都会涉及暂存区的概念.例如 git diff命令.
+14.新建代码仓库的命令
+  　github-create repo_name
+15.git clone [url] 这个命令的作用是
+     获取一个url对应的远程Git repo, 创建一个local copy.
+     克隆仓库
+16.添加指定文件到暂存区的命令
+     git add
+17.删除工作区文件，并且将这次删除放入暂存区的命令
+$ git rm [file1] [file2] .
+18.改名文件，并且将这个改名文件放入暂存区的命令
+$ git mv [file-original] [file-renamed]
+19.提交暂存区到仓库的命令
+ $ git commit -m [message]
+20.直接从工作区提交到仓库的命令
+ $ git commit -am [message]
+21.显示变更信息的命令
+$ git show [commit]
+22.查看历史信息的命令
+git log
+23.Commit的意义是
+提交信息
+24.Pull的意义是
+ 取回远程主机某个分支的更新,再与本地的指定分支合并
+ 会将本地库更新至远程库的最新状态
+25.Push的意义是
+ 命令用于将本地分支的更新，推送到远程主机
